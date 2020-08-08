@@ -1,0 +1,17 @@
+Los espacios de nombre o namespaces, esto nos permiten agrupar nuestro código de manera ordenada.
+Para definir estos namespaces, se debe seguir una jerarquía que usualmente está dadas por las carpetas 
+donde se encuentran ubicados los archivos php.
+
+El ejemplo para esto se encuentra en la carpeta Namespace. 
+
+Resumen
+A partir de ahora todo lo trabajaremos usando Namespaces. Asimismo, al trabajar dentro de un namespace y querer llamar a otra clase siempre deberemos importar la clase previamente para hacer uso de ella.
+
+Recomendaciones
+Los namespaces deben ser declarados siguiendo la ruta de las carpetas que contiene el archivo. Ejm: Kodoti\Providers\Database.
+Como buena práctica debemos crear la primera letra de la carpetas en mayúscula.
+El primer nombre del Namespace debe hacer referencia al vendor o a nuestro proveedor del código. En nuestro caso usamos Kodoti como Vendor (Kodoti\Providers\Database).
+PHP 7 y múltiples namespaces
+Si queremos importar varios espacios de nombre con PHP 7 se facilita la vida siempre y cuando pertenezcan al mismo namespace.
+
+use Kodoti\Providers\Helpers\{IvaHelper as Iva, MathHelper as Math};

@@ -1,0 +1,5 @@
+Composer es un gestor de librerías equivalente a npm, permite mantener actualizadas todas las 
+que estemos usando.
+Luego de seguir la guía de instalación para composer desde la documentación, se obtiene un archivo
+composer.phar y para asegurarnos que todo está correcto se usa el comando php composer.phar --version,
+si muestra la versión está correctamente descargado y listo para su uso.

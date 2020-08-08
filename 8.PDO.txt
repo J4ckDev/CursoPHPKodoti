@@ -1,0 +1,1 @@
+El desarrollo de toda esta sección se encuentra desarrollado en el ejercicio de la carpeta PDO.

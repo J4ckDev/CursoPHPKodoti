@@ -1,0 +1,53 @@
+El desarrollo de esta parte se desarrolla en la carpeta arquitectura.
+
+Se hace uso del patrón de diseño repositorio para optimizar el código realizado en la carpeta PDO, este
+patrón permite aislar la lógica, en nuestro caso concreto los service no implementarán nada de SQL,
+lo que harán es consumir esos repositorios y los repositorios trabajarán como una unidad representando
+a cada una de las tablas de la base de datos. Una ventaja de este patrón, es que se pueden reutilizar
+las consultas SQL.
+
+Razones para usar repository:
+Hace más legible nuestro código.
+Permite reutilizar queries.
+Ya no trabajo directamente con SQL, sino con objetos.
+
+Como gestor de logs o registros, se va a utilizar monolog, para instalarlo se usa el comando 
+php composer.phar require monolog/monolog.
+El uso de los logs es muy importante y una muy buena práctica, en nuestro caso lo vamos a 
+utilizar en los try/catch para guardar los mensajes de todos los errores que puedan ocurrir
+en la fase de producción. Los logs también sirven para guardar información.
+
+Documentación en https://github.com/Seldaek/monolog
+
+Los logs manejan niveles como se observa en la documentacion oficial de monolog:
+
+Log Levels
+Monolog supports the logging levels described by RFC 5424.
+
+DEBUG (100): Detailed debug information. Son detallados, mostrar los queries que se ejecutan en el 
+sistema, los archivos que se ejecutan en un momento dado, etc. Solo se recomienda para un entorno de
+desarrollo por la gran cantidad de datos que se podrían generar.
+
+INFO (200): Interesting events. Examples: User logs in, SQL logs. Informar sobre los pasos que se hacen
+Por ejemplo describir cada paso para la creación de una orden.
+
+NOTICE (250): Normal but significant events.
+
+WARNING (300): Exceptional occurrences that are not errors. Examples: Use of deprecated APIs, poor use 
+of an API, undesirable things that are not necessarily wrong. Son errores que se producen pero no son
+tan graves y permiten que se pueda seguir ejecutando el proyecto.
+
+ERROR (400): Runtime errors that do not require immediate action but should typically be logged and 
+monitored. Esto es para errores que requieren mayor atención y que debería ser revisado.
+
+CRITICAL (500): Critical conditions. Example: Application component unavailable, unexpected exception.
+Son errores que tienen una mayor prioridad y debería recibir atención rápida.
+
+ALERT (550): Action must be taken immediately. Example: Entire website down, database unavailable, etc.
+This should trigger the SMS alerts and wake you up.
+
+EMERGENCY (600): Emergency: system is unusable. Errores de una magnitud muy alta que deja inservible 
+un proyecto.
+
+Para trabajar con estos niveles, solo es necesario llamar al método que corresponde al nombre del nivel
+a usar.

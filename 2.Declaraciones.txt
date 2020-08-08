@@ -1,0 +1,3 @@
+Los tipos de datos en PHP son String, Integer, Float, Boolean, Array y Object.
+
+El ejemplo de esta sección se encuentra en el archivo declaracion.php

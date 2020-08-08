@@ -1,0 +1,2 @@
+Basicamente si una variable existe y no es nula, muestre su valor sino muestre un mensaje.
+El ejemplo de esta sección esta en el archivo fusNull.php

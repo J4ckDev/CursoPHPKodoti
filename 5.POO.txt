@@ -1,0 +1,7 @@
+Clase
+Plasmar las características de una persona, objeto o animal en código.
+Un objeto es la instancia de una clase para poder usarlo.
+Una clase está compuesta por atributos o propiedades que representan las características del objeto.
+Las cualidades son los métodos del objeto.
+
+En el archivo poo.php se encuentran los ejemplos.

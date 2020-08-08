@@ -1,0 +1,24 @@
+PHP, APACHE y MySQL
+El curso esta desarrollando usando el sistema operativo Windows y PHP 7+. Por lo cual, recomiendo un stack que instale todo de manera sencilla y usando la versión más actual de PHP 7.
+
+WampServer: http://www.wampserver.es/
+XAMPP: https://www.apachefriends.org/es/index.html
+
+
+HeidiSQL
+Gestor UI para MySQL.
+
+https://www.heidisql.com/download.php
+
+Composer
+Luego de instalar su stack preferido para PHP deberán instalar composer, el cual es un administrador de paquetes. En la instalación les dirá con que versión de PHP desean trabajar, en nuestra caso elegimos la versión 7, dicha versión deberán usar en el WampServer o lo que tengan instalado.
+
+https://getcomposer.org/download/
+Visual Studio Code
+Pues yo de preferencia usaré Visual Studio Code para el desarrollo del curso, más que nada porque me facilita la grabación de los videos usando zoom.
+
+https://code.visualstudio.com/download
+Extensiones recomendadas para VS Code
+PHP IntelliSense: autocompleta la ayuda de PHP.
+PHPFMT - PHP Formatter: da formato a nuestros archivos PHP.
+PHP Namespace Resolver: permite importar namespaces.

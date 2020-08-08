@@ -1,0 +1,2 @@
+Aquí se escribe la lógica del proyecto o los códigos que se harán cargo de realizar las consultas
+a la base de datos.

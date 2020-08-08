@@ -1,0 +1,8 @@
+{
+    "name": "vendor/project-name",
+    "autoload":{
+        "psr-4": {
+            "Kodoti\\": "Kodoti/"
+        }
+    }
+}

@@ -1,0 +1,7 @@
+[2020-08-08T07:36:38.824641+02:00] kodoti.ERROR: Call to a member function info() on null [] []
+[2020-08-08T07:37:35.614036+02:00] kodoti.INFO: Comenzó creación de orden [] []
+[2020-08-08T07:37:35.614774+02:00] kodoti.INFO: Se preparó el modelo para la nueva orden [] []
+[2020-08-08T07:37:35.615344+02:00] kodoti.INFO: Se creó la nueva orden [] []
+[2020-08-08T07:37:35.615424+02:00] kodoti.INFO: Se asoció el ID 54 a la nueva orden [] []
+[2020-08-08T07:37:35.738273+02:00] kodoti.INFO: Se creó el detalle de la orden [] []
+[2020-08-08T07:37:35.793705+02:00] kodoti.INFO: Finalizó la creación de la orden [] []

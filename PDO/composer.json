@@ -1,0 +1,12 @@
+{
+    "name": "jackdev/kodoti",
+    "autoload": {
+        "psr-4": {
+            "Kodoti\\": "Kodoti/",
+            "App\\": "App/"
+        }
+    },
+    "require": {
+        "php": ">=7"
+    }
+}

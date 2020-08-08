@@ -1,0 +1,10 @@
+Agredicimientos
+Gracias por participar del curso, espero que todo lo aprendido lo uses en tu vida profesional
+
+Recomendaciones
+Practica, equivocate y aprende, es la única forma de crecer profesionalmente porque nadie nace 
+sabiendo.
+Durante este curso nos hemos enfocado full en el back-end, pues la parte front-end no hemos 
+visto nada. Recomendaría que intente pasar lo aprendido a un proyecto web implementando la UI.
+Con lo aprendido en este curso podrías darle una mirada la creación de APIs con PHP porque 
+el mercado actual demanda mucho este perfil.

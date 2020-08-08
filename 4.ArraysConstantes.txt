@@ -1,0 +1,13 @@
+Muchas veces declaramos constantes para especificar parámetros de inicialización de nuestro proyecto 
+pero desde PHP 7 podemos crear ahora un Array.
+
+<?php
+define('__CONFIG__', [
+  'db' => 'my-connection-string',
+  'mode' => 'dev',
+  'default_path', 'path'
+]);
+Por ejemplo, si queremos acceder a una de las propiedades de nuestra constante __CONFIG__, solo 
+bastará acceder al índice.
+
+echo __CONFIG__['db']; // my-connection-string

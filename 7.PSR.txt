@@ -1,0 +1,23 @@
+Son los estándares que se tienen en PHP, se pueden consultar en https://www.php-fig.org/.
+En el curso vamos a hacer uso de PSR-4, el cuál describe como mediante composer nos podemos evitar
+estar escribiendo en todas partes el require_once y la carga de los diferentes archivos sea de forma 
+automática.
+
+Haciendo uso de los archivos generados en la carpeta Namespace, se va a hacer uso de composer.
+El archivo index.php será el encargado de llevar el ejemplo con composer.
+
+el archivo composer.json usado como ejemplo signifia lo siguiente:
+
+{
+    "name": "vendor/project-name", -> vendor es el autor y projectName es el nombre del proyecto
+    "autoload":{ -> Uso de autoload
+        "psr-4": { -> Con el estándar mencionado anteriormente
+            "Kodoti\\": "Kodoti/" -> Kodoti\\ sería el namespace padre y Kodoti/ la carpeta donde 
+                                     empieza o está ese primer namespace.
+        }
+    }
+}
+
+Cuando ya se configura el archivo composer.json, se procede a usar el archivo composer.phar para 
+realizar la instalación de composer en el proyecto. Para ello se ejecuta el comando 
+php composer.phar dump-autoload
